@@ -1,0 +1,132 @@
+/* Background image */
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  text-align: center;
+  background-color: #555;
+  color: #fff;
+  padding: 10px 0;
+}
+
+/* Logo CSS */
+img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-family: arial, bold;
+  color: rgb(255, 136, 0);
+  font-size: 30px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  text-align: center;
+  /* Center the text */
+}
+
+div h1 {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: example 2s linear 0s forwards;
+}
+
+@keyframes example {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 599px;
+  }
+}
+
+
+/* Animation on the logo */
+.fade {
+  /* padding-top: 70px; */
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Running text */
+.running-text-container {
+  position: relative;
+  background-color: orange;
+  overflow: hidden;
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.running-text {
+  position: relative;
+  color: white;
+  display: inline-block;
+  white-space: nowrap; /* Ensure text does not wrap */
+  animation: run-text 20s linear infinite; /* Running animation */
+}
+
+.running-text span {
+  margin: 0 10px; /* Add space between text and lights */
+}
+
+.blinking-light {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  animation: blink 1s infinite alternate;
+}
+
+.blinking-light:first-child {
+  margin-right: 10px; /* Add space after first light */
+}
+
+.blinking-light:last-child {
+  margin-left: 10px; /* Add space before last light */
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes run-text {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+

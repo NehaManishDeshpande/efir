@@ -1,0 +1,16 @@
+.navbar-brand {
+    padding: 10px;
+  }
+  .navbar-nav.ml-auto {
+    display: flex;
+    align-items: center;
+  }
+  .nav-link {
+    padding-left: 40px !important;
+    transition: all 0.3s ease; /* Add transition effect */
+    font-size: 16px; /* Initial font size */
+  }
+  .nav-link:hover {
+    transform: translateY(-3px); /* Pop up effect on hover */
+    font-size: 18px; /* Increase font size on hover */
+  }

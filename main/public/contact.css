@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-header {
+    padding-top: 40px;
+    color: orange;
+    text-align: center;
+    font-size: 2.5em;
+    transition: color 0.3s ease;
+}
+
+#contact-header:hover {
+    cursor: pointer;
+    color: orange; /* Change to orange on hover */
+}
+
+.intro-text {
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+.helpline-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.helpline-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1em;
+}
+
+.helpline-table td:first-child {
+    font-weight: bold;
+}
+
+.button-row {
+    text-align: center;
+}
+
+.complaint-button {
+    background-color: rgb(140, 182, 250);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.complaint-button:hover {
+    background-color: #ffae42; /* Yellowish-Orange */
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    background-color: #555;
+    color: #fff;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    #contact-header {
+        font-size: 2em;
+    }
+
+    .intro-text {
+        font-size: 1em;
+    }
+
+    .helpline-table td {
+        font-size: 1em;
+    }
+}

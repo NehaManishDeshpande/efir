@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-FIR Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="home.css">
+    
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="home.html">
+            <img src="logo1.jpg" alt="Logo" width="150" height="60">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-file-alt"></i> File Complaint</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html"><i class="fas fa-phone"></i> Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-sign-in-alt"></i> Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-custom">
+        <div class="box">
+            <h3>How can an E-FIR website help you?</h3>
+            <p>An E-FIR website allows you to file an FIR online, making the process more convenient and accessible.</p>
+        </div>
+        <div class="box">
+            <h3>What are the advantages of using an E-FIR system?</h3>
+            <p>Using an E-FIR system saves time and effort as you can register a complaint from anywhere with an
+                internet connection.</p>
+        </div>
+        <div class="box">
+            <h3>Is it secure to file an FIR online?</h3>
+            <p>Yes, E-FIR systems employ encryption and secure protocols to ensure the confidentiality and integrity of
+                your complaint.</p>
+        </div>
+        <div class="box">
+            <h3>Can I track the status of my complaint filed through an E-FIR website?</h3>
+            <p>Yes, most E-FIR websites provide a tracking mechanism where you can monitor the progress of your
+                complaint.</p>
+        </div>
+        <div class="box">
+            <h3>How does an E-FIR website contribute to efficient law enforcement?</h3>
+            <p>E-FIR websites streamline the process of registering complaints, enabling law enforcement agencies to
+                respond promptly and effectively.</p>
+        </div>
+        <div class="box">
+            <h3>What are the legal implications of filing an E-FIR?</h3>
+            <p>Filing an E-FIR is legally equivalent to filing a traditional FIR, and the information provided is
+                subject to investigation and legal proceedings.</p>
+        </div>
+        <div class="box">
+            <h3>Can I file an E-FIR for any type of crime?</h3>
+            <p>While E-FIR systems cover a wide range of crimes, certain serious offenses may require filing a complaint
+                in person at a police station.</p>
+        </div>
+        <div class="box">
+            <h3>What should I do if I face technical difficulties while filing an E-FIR?</h3>
+            <p>If you encounter technical issues, you can contact the support team of the E-FIR website for assistance.
+            </p>
+        </div>
+        <div class="box">
+            <h3>Is there a time limit for filing an E-FIR?</h3>
+            <p>While it's advisable to file a complaint as soon as possible, E-FIR systems generally accept complaints
+                within a reasonable timeframe from the occurrence of the incident.</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const boxes = document.querySelectorAll(".box");
+
+            function revealBoxes() {
+                boxes.forEach((box, index) => {
+                    setTimeout(() => {
+                        box.style.opacity = 1;
+                    }, 300 * index);
+                });
+            }
+
+            revealBoxes();
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+<footer>
+    <p>&copy; 2024 EFIR. All Rights Reserved.</p>
+</footer>
+
+</html>
